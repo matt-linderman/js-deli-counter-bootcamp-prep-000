@@ -23,6 +23,7 @@ function currentLine(katzDeliLine) {
     for (var i = 0; i < katzDeliLine.length; i++) {
       lineDesc += ` ${i+1}. ${katzDeliLine[i]},`
     }
+    lineDesc.slice(0,-1)
     return lineDesc
   }
 }
